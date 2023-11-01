@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: design-system
+  namespace: monitor-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: design-system
+  template:
+    metadata:
+      labels:
+        name: design-system
+    spec:
+      containers:
+        - name: design-system
+          image: docker-registry.netbase.com/design-system:0.0.4
+          ports:
+            - containerPort: 80
