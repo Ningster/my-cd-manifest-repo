@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: design-system
-          image: docker-registry.netbase.com/design-system:0.0.4
+          image: docker-registry.netbase.com/design-system:0.0.5
           ports:
             - containerPort: 80
